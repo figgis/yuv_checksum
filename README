@@ -1,0 +1,13 @@
+./sh_yuv.py file width height [level] [hash_algorithm]
+level (int) - secure hash level
+    1 - secure hash for complete frame
+    2 - secure hash for Y, U, V and complete frame
+
+hash algorithm (string) to use, can be any of the following:
+    sha1, sha224, sha256, sha384, sha512, mf5
+
+defaults to sha1, level 1
+example:
+./sh_yuv.py foreman_352x288.yuv 352 288
+./sh_yuv.py foreman_352x288.yuv 352 288 2 md5
+
